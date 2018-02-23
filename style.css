@@ -1,0 +1,42 @@
+
+body {
+  background: black;
+  color: white;
+  font-family: "Inconsolata", monospace;
+
+}
+.str {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.comment {
+  color: #0000cf;
+}
+
+
+
+
+
+@media only print {
+  .comment {
+    color: #333;
+  }
+  body {
+    background: #dfdfdf;
+    color: #333;
+
+  }
+  
+  .vim-view-only {
+    display: none;
+  }
+}
