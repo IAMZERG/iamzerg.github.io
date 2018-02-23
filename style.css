@@ -1,7 +1,7 @@
 
 body {
   background: black;
-  color: white;
+  color: #eee;
   font-family: "Inconsolata", monospace;
 
 }
@@ -27,16 +27,23 @@ a:hover {
 
 
 @media only print {
-  .comment {
+  .comment,
+  .str {
     color: #333;
   }
   body {
     background: #dfdfdf;
     color: #333;
-
+    font-family: serif;
   }
+
+  a {
+    text-decoration: underline;
+    color: #ddd;
+  }
+
   
-  .vim-view-only {
+  .vim{
     display: none;
   }
 }
