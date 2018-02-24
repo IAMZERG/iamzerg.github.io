@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row">
             <div class="col col-xl-4">
-              <h1><span class="vim">let name = "</span><span class="str">Wes Wright</span><span class="vim">";</span></h1>
+              <h1><span class="vim">let name = </span><span class="str">Wes Wright</span><span class="vim">;</span></h1>
               <!--
                 <div>Street</div>
                 <div>City/State/Zip</div>
@@ -19,51 +19,30 @@
                 <div>Email: </div>
               -->
 
-              <div><span class="vim">let githubLink = "</span><a href="https://github.com/IAMZERG" target="_blank">https://github.com/IAMZERG</a><span class="vim">";</span></div>
-              <div><span class="vim">let codePenLink = "</span><a href="codepen.io/IAMZERG" target="_blank">https://codepen.io/IAMZERG</a><span class="vim">";</span></div>
-              <div><span class="vim">let stackOverflowLink = "</span><a href="StackOverflow.com/IAMZERG" target="_blank">https://stackoverflow.com/IAMZERG</a><span class="vim">";</span></div>
-              <div><span class="vim">let githubLink = "</span><a href="https://www.linkedin.com/in/weswright">https://linkedin.com/in/weswright</a><span class="vim">";</span></div>
-              <hr>
+              <div><span class="vim">let githubLink = </span><a class="str" href="https://github.com/IAMZERG" target="_blank">https://github.com/IAMZERG</a><span class="vim">;</span></div>
+              <div><span class="vim">let codePenLink = </span><a class="str" href="codepen.io/IAMZERG" target="_blank">https://codepen.io/IAMZERG</a><span class="vim">;</span></div>
+              <div><span class="vim">let stackOverflowLink = </span><a class="str" href="StackOverflow.com/IAMZERG" target="_blank">https://stackoverflow.com/IAMZERG</a><span class="vim">;</span></div>
+              <div><span class="vim">let githubLink = </span><a class="str" href="https://www.linkedin.com/in/weswright">https://linkedin.com/in/weswright</a><span class="vim">;</span></div>
 
               <hr>
-              <h2><span class="vim comment">// Experience & Achievements</h2>
+
+              <h2>Experience & Achievements</h2>
               <br>
               <ul>
-                <li><span class="vim">let codeLouisvilleMentor = "</span><span class="str">Assisted students with learning to code, troubleshooting assistance, encouragement and guidance.</span><span class="vim">";</span></li>
-                <li><span class="vim">let compuCom = "</span><span class="str">Supported customers through ever-changing policies and procedures. Service broad range of applications and hardware over the phone. Awarded additional PTO for performance.</span><span class="vim">";</span></li>
-                <li><span class="vim">let paulCrecelius = "</span><span class="str">Created an Internet platform for a class taught by local counselor and teacher, Paul Crecelius, enabling sharing among class participants</span></li>
-                <li><span class="vim">let insightGlobal = "</span><span class="str">Significantly reduced erors in tax returns for annual J.P. Morgan Chase audit return project (The firm requested I return annually for this project even though my contractor’s term had expired).</span><span class="vim">";</span></li>
+                <li><span class="vim">let codeLouisvilleMentor = <span class="str">Assisted students with learning to code, troubleshooting assistance, encouragement and guidance.</span><span class="vim">;</span></li>
+                <li><span class="vim">let compuCom = </span><span class="str">Supported customers through ever-changing policies and procedures. Service broad range of applications and hardware over the phone. Awarded additional PTO for performance.</span><span class="vim">;</span></li>
+                <li><span class="vim">let paulCrecelius = </span><span class="str">Created an Internet platform for a class taught by local counselor and teacher, Paul Crecelius, enabling sharing among class participants</span>;</li>
+                <li><span class="vim">let insightGlobal = </span><span class="str">Significantly reduced erors in tax returns for annual J.P. Morgan Chase audit return project (The firm requested I return annually for this project even though my contractor’s term had expired).</span><span class="vim">;</span></li>
               </ul>
-
-              <!--
-                <div>Blablabla</div>
-                <div>Occupation</div>
-                <div>Occupation2</div>
-                <div>Phone #</div>
-                <div>Email</div>
-                <div>&nbsp;</div>
-                <div>Blablabla</div>
-                <div>Occupation</div>
-                <div>Occupation2</div>
-                <div>Phone #</div>
-                <div>Email</div>
-                <div>&nbsp;</div>
-                <div>Blablabla</div>
-                <div>Occupation</div>
-                <div>Occupation2</div>
-                <div>Phone #</div>
-                <div>Email</div>
-                <div>&nbsp;</div>
-                <hr>
-              -->
+              
               <h2>Education</h2>
-              <p>B.S., Biology, 2011 - University of Louisville</p>
-              <p>Code Louisville - Ruby on Rails Development (SQL, TDD, console basics, Ruby, and Ruby on Rails)</p>
+              <p><span class="vim">let collegeGrad = </span><span class="str">B.S., Biology, 2011 - University of Louisville</span><span class="vim">;</span></p>
+              <p><span class="vim">let codeLouEducation = </span><span class="str">Code Louisville - 2014-2016</span><span class="vim">;</span></p>
               <hr>
             </div><!--col-xs-4-->
             <div class="col col-xl-8">
               <hr>
-              <h2>Ongoing Development Projects</h2>
+              <h2>Ongoing Projects</h2>
               <ul>
                 <li>MAGIC: THE GATHERING DECKLIST APP -- (Ruby on Rails - Code Louisville) The app required responsiveness, user authentication, test coverage, and HTTP methods--create, read, update, and delete. I added the Papertrail gem to track decklist versions, but will be creating a custom solution in time. An API is planned along with UI improvements and feature additions. Will also likely integrate an API for card names.</li>
                 <li>MAGIC: THE GATHERING PLAYTESTING APP -- (Ember.js Side Project) Produced an objective way of determining cards/actions to drive win-rates in certain matchups, achieving time and overall goal objectives.
@@ -72,8 +51,8 @@
                 </li>
               </ul>
               <hr>
-              <h2>Internet/Software Expertise:</h2>
-              <div>HTML5 • CSS3 • JavaScript • Ruby on Rails • Git • jQuery • Ember.js • Express • MongoDB/Mongoose • SQL • Node.js • Critical Thinking • Problem Solving • Attention to Detail</div>
+              <h2>Internet/Software Expertise</h2>
+              <div class="skills"><span class="vim">let skillList = [<span class="str">Google.com</span>, <span class="str">Problem Solving</span>, <span class="str">Attention to Detail</span>, </span><span class="str">HTML5</span>, <span class="str">CSS3</span>, <span class="str">"Javascript</span>, <span class="str">Ruby on Rails</span>, <span class="str">Git</span>, <span class="str">jQuery</span>, <span class="str">Ember.js</span>, <span class="str">Express</span>, <span class="str">SQL</span>, <span class="str">MongoDB</span>, <span class="str">Node.js</span><span class="vim">];</span></div>
               <hr>
               <h2>Career Chronology</h2>
               <ul>
@@ -87,7 +66,11 @@
           </div> <!--row-->
         </div>  <!--container-->
       </div> <!-- resume -->
+      <div class="vim statusline"><span class="filename">~/Resume.txt</span><span class="cursor">0,0</span><span class="doc percent"></span>
+        <input class="cmd"></input></div>
     </div> <!--environment -->
+    <footer>
+    </footer>
   </body>
 </html>
 

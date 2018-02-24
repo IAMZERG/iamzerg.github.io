@@ -3,6 +3,7 @@ body {
   background: black;
   color: #eee;
   font-family: "Inconsolata", monospace;
+  padding-bottom: 10%;
 
 }
 .str {
@@ -14,6 +15,10 @@ a {
   color: red;
 }
 
+hr {
+  display: none;
+}
+
 a:hover {
   color: #aaa;
 }
@@ -22,18 +27,55 @@ a:hover {
   color: #0000cf;
 }
 
+.cmd {
+  background: black;
+  font-family: "Inconsolata", monospace;
+  color: #eee;
+  border: none;
+  display: block;
+}
 
+h2:before {
+  content: "// ";
+}
+h2 {
+  color: #0000cf;
+}
+
+/* add quotation marks */
+
+.str:before,
+.str:after {
+  content: "\"";
+}
+
+.statusline {
+  background: black;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+}
+.percent,
+.cursor {
+  float:right;
+  width: 10%;
+}
+.filename {
+  width: 80%:
+}
 
 
 
 @media only print {
+  h2,
   .comment,
   .str {
-    color: #333;
+    color: black;
   }
   body {
     background: white;
-    color: #333;
+    color: black;
     font-family: serif;
   }
 
@@ -46,4 +88,17 @@ a:hover {
   .vim {
     display: none;
   }
+
+
+  /* remove added content for print view */
+
+  .str:before,
+  .str:after,
+  h2:before {
+    content: none;
+  }
+  hr {
+    display: block;
+  }
+   
 }
