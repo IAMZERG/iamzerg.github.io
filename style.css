@@ -28,6 +28,7 @@ a:hover {
 }
 
 .cmd {
+  outline: none;
   background: black;
   font-family: "Inconsolata", monospace;
   color: #eee;
@@ -46,7 +47,7 @@ h2 {
 
 .str:before,
 .str:after {
-  content: "\"";
+  content: '"';
 }
 
 .statusline {
