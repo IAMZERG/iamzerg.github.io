@@ -16,4 +16,8 @@ document.querySelector("form").onsubmit = function (event) {
 
   console.log(formData.get("cmd"));
 
+  if (formData.get('cmd') == ":q" || formData.get('cmd') == ":wq") {
+    window.location.assign("desktop.html");
+  }
+
 };
