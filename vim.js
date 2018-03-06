@@ -21,3 +21,17 @@ document.querySelector("form").onsubmit = function (event) {
   }
 
 };
+
+
+
+
+if(!window.matchMedia("(print)").matches) {
+	let vimTags = document.querySelectorAll(".vim");
+	vimTags.forEach(function (tag) {
+		console.log(tag.innerHTML);
+			tag.innerHTML=tag.innerHTML.replace("let", "<span class='code'>let</span>");
+	});
+}
+
+
+
