@@ -1,11 +1,8 @@
-
 document.addEventListener("keydown", function(event) {
-  console.log(event.keyCode);
   var cmdInput = document.querySelector(".cmd");
   if(event.shiftKey && event.keyCode == 186) {
     cmdInput.focus();
   } 
-
 });
 
 document.querySelector("form").onsubmit = function (event) {
@@ -14,22 +11,22 @@ document.querySelector("form").onsubmit = function (event) {
   event.target.reset();
   event.target.childNodes[0].blur();
 
-  console.log(formData.get("cmd"));
+  alert(window.location);
 
+  window.location.assign("desktop");
   if (formData.get('cmd') == ":q" || formData.get('cmd') == ":wq") {
-    window.location.assign("desktop.html");
+    
+    window.location.assign("desktop");
+    console.log("switching to desktop");
   }
 
 };
 
 
-
-
 if(!window.matchMedia("(print)").matches) {
 	let vimTags = document.querySelectorAll(".vim");
 	vimTags.forEach(function (tag) {
-		console.log(tag.innerHTML);
-			tag.innerHTML=tag.innerHTML.replace("let", "<span class='code'>let</span>");
+			tag.innerHTML = tag.innerHTML.replace("let", "<span class='code'>let</span>");
 	});
 }
 
