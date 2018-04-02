@@ -1,12 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen, print">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" >
-  </head>
-  <title>Wes Wright - Web Developer</title>
-  <body>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -22,7 +15,7 @@
    version="1.1"
    id="svg3719"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="door-closed.svg">
+   sodipodi:docname="door-open.svg">
   <defs
      id="defs3713" />
   <sodipodi:namedview
@@ -60,23 +53,22 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#000000;fill-rule:evenodd;stroke-width:0.0635349"
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.06388931"
        id="rect56"
-       width="13.229167"
+       width="13.377168"
        height="26.458334"
        x="0"
-       y="270.54169"
+       y="270.54166"
        rx="0"
-       ry="0" />
+       ry="0"
+       transform="matrix(0.98893635,-0.14834045,0,1,0,0)" />
     <ellipse
-       style="fill:#ffcc00;stroke-width:0.26458332"
+       style="fill:#ffcc00;stroke-width:0.26605922"
        id="path4570"
-       cx="12.191732"
-       cy="284.77536"
-       rx="0.60876399"
-       ry="0.70748246" />
+       cx="12.328127"
+       cy="285.61191"
+       rx="0.61557448"
+       ry="0.70748246"
+       transform="matrix(0.98893635,-0.14834045,0,1,0,0)" />
   </g>
 </svg>
-  </body>
-</html>
-

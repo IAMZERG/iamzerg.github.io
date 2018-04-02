@@ -1,12 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen, print">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" >
-  </head>
-  <title>Wes Wright - Web Developer</title>
-  <body>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -77,6 +70,3 @@
        ry="0.70748246" />
   </g>
 </svg>
-  </body>
-</html>
-
