@@ -59,12 +59,15 @@ hr {
  ************************
 */
 
+
+
 a:hover {
   color: #aaa;
 }
 
-.comment {
-  color: #0000cf;
+.comment,
+h2 {
+  color: #3355ff;
 }
 
 .cmd {
@@ -78,9 +81,6 @@ a:hover {
 
 h2:before {
   content: "// ";
-}
-h2 {
-  color: #0000cf;
 }
 
 /* add quotation marks */
@@ -115,6 +115,10 @@ h2 {
 	}
 	.print {
 		display: none;
+	}
+
+	body {
+		padding-left: 15px;
 	}
 }
 
