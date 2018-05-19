@@ -108,18 +108,26 @@
               <h2 class="print">References</h2>
               <div class="print"><i>Available upon Request</i></div>
 	      <div class="vim">if(employer.hiring &amp;&amp; employer.compensation &gt; 0) {</div>
-	      <div class="vim">&nbsp;&nbsp;employer.sendmail(person);</div>
+	      <a class="vim form-link">&nbsp;&nbsp;employer.sendmail(person);</a>
 	      <div class="vim">} else if (employer.hiresContractors) {</div>
-	      <div class="vim">&nbsp;&nbsp;employer.sendmail(person);</div>
+	      <a class="vim form-link">&nbsp;&nbsp;employer.sendmail(person);</a>
 	      <div class="vim">}</div>
 
             </div> <!-- col-xs-8 -->
           </div> <!--row-->
         </div>  <!--container-->
       </div> <!-- resume -->
+      <form id="contact-form" action="https://formspree.io/weswrightgetintouch@aol.com"
+      method="POST">
+	    <h2><label for="message">Message: </label></h2><br>
+	    <textarea id="message" name="message"></textarea><br>
+	    <h2><label for="email">Email: </label></h2><br>
+	    <input type="email" id="email" name="_replyto"><br>
+	    <input type="submit" value="Send">
+	</form> 
+    </div> <!--environment -->
       <div class="vim statusline"><span class="filename">~/Desktop/Resume.txt</span><span class="cursor">0,0</span><span class="doc percent"></span>
         <form id="cmd" action=""><input name="cmd" type="text" class="cmd"></input></form></div>
-    </div> <!--environment -->
     <footer>
     </footer>
   </body>

@@ -106,6 +106,40 @@ h2:before {
   width: 80%:
 }
 
+.environment {
+	display: flex;
+}
+
+.resume {
+	width: 100%;
+	margin-bottom: 300px;
+}
+
+
+#contact-form {
+	width: 50% - 5px;
+	display: none;
+	margin-bottom: 300px;
+	margin-left: 5px;
+	border-left: 5px solid gray;
+}
+
+
+#contact-form > * {
+	margin: 5px;
+	margin-left: 10px;
+	width: 200px;
+}
+
+#contact-form:first-child {
+	margin-top: 20px;
+}
+
+br + input,
+br + h2 {
+	margin-bottom: 5px;
+}
+
 @media not print {
 	h2 span,
 	h1 span,

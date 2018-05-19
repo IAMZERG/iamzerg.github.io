@@ -13,15 +13,12 @@ document.addEventListener("keydown", function(event) {
   } 
 });
 
-document.querySelector("form").onsubmit = function (event) {
+document.querySelector("#cmd").onsubmit = function (event) {
   event.preventDefault();
   const formData = new FormData(event.target);
   event.target.reset();
   event.target.childNodes[0].blur();
 
-  alert(window.location);
-
-  window.location.assign("desktop.html");
   if (formData.get('cmd') == ":q" || formData.get('cmd') == ":wq") {
     
     window.location.assign("desktop.html");
@@ -30,6 +27,15 @@ document.querySelector("form").onsubmit = function (event) {
 
 };
 
+document.querySelectorAll(".form-link").forEach(function(item) {
+	item.addEventListener("click", function (event) {
+		document.getElementById("contact-form").style.display = "block";
+		document.querySelector(".resume").style.width = "50%";
+		window.scroll(0,0);
+	});
+});
+
+console.log("Hello!");
 
 
 
