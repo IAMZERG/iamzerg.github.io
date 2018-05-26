@@ -144,6 +144,11 @@ h2:before {
 	-webkit-box-sizing: border-box;
 }
 
+#contact-form [type='submit'] {
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
 /* Change autofill background color in webkit browsers */
 
 input:-webkit-autofill,
