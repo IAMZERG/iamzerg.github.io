@@ -1,9 +1,11 @@
-
-if(!window.matchMedia("(print)").matches) {
-	let vimTags = document.querySelectorAll(".vim");
-	vimTags.forEach(function (tag) {
-			tag.innerHTML = tag.innerHTML.replace("let", "<span class='code'>let</span>");
-	});
+if (!window.matchMedia("(print)").matches) {
+	var vimTags = document.querySelectorAll(".vim");
+	
+	console.log(vimTags);
+	for(var i=0; i < vimTags.length; i++) {
+			vimTags[i].innerHTML = vimTags[i].innerHTML.replace("let", "<span class='code'>let</span>");
+	}
+	
 }
 
 document.addEventListener("keydown", function(event) {
@@ -27,13 +29,15 @@ document.querySelector("#cmd").onsubmit = function (event) {
 
 };
 
-document.querySelectorAll(".form-link").forEach(function(item) {
-	item.addEventListener("click", function (event) {
+var formLinks = document.querySelectorAll(".form-link");
+
+for(var j=0; j < formLinks.length; j++) {
+	formLinks[j].addEventListener("click", function (event) {
 		document.getElementById("contact-form").style.display = "block";
 		document.querySelector(".resume").style.width = "50%";
 		window.scroll(0,0);
 	});
-});
+}
 
 console.log("Hello!");
 
