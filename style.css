@@ -24,34 +24,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body {
-  background: black;
-  color: #eee;
-  font-family: "Inconsolata", monospace;
-  padding-bottom: 10%;
-
-}
-.str {
-  color: red;
-}
-
-.code {
-	color: #66ffff;
-}
-
-li {
-	list-style: none;
-}
-
-
-a {
-  text-decoration: none;
-  color: red;
-}
-
-hr {
-  display: none;
-}
 
 
 /************************
@@ -59,117 +31,185 @@ hr {
  ************************
 */
 
+@media (max-width: 499px) {
+	body {
+		margin: 10%;
+		line-height: 12px;
+		font-family: 'Scope One, serif';
+		background-color: #ddd;
+		font-size: 16px;
+	}
+
+	.vim {
+		display: none;
+	}
+
+	h1, h2 {
+		font-size: 20px;
+		padding: 10px 5px;
+		font-family: 'Roboto', sans-serif;
+	}
 
 
-a:hover {
-  color: #aaa;
-}
+	.str {
+		padding: 5px 0 5px 0;
+		margin: 5px 0 5px 0;
+	}
 
-.comment,
-h2 {
-  color: #3355ff;
-}
+	.skills { 
+		line-height: 1.3; 
+		width: 400px;
+	}
 
-.cmd {
-  outline: none;
-  background: black;
-  font-family: "Inconsolata", monospace;
-  color: #eee;
-  border: none;
-  display: block;
-}
+	.skillList {
+		display: inline;
+		margin: 0; 
+	}
 
-h2:before {
-  content: "// ";
-}
-
-/* add quotation marks */
-
-.str:before,
-.str:after {
-  content: '"';
-}
-
-.statusline {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  bottom: 0;
-  background: black;
-}
-.topline {
-	background: white;
-	color: black;
-}
-.percent,
-.cursor {
-  float:right;
-  width: 10%;
-}
-.filename {
-  width: 80%:
-}
-
-.environment {
-	display: flex;
-}
-
-.resume {
-	width: 100%;
-	margin-bottom: 300px;
+	.skills .skillList span {
+		position: relative;
+	}
 }
 
 
-#contact-form {
-	width: 50% - 5px;
-	display: none;
-	margin-bottom: 300px;
-	margin-left: 5px;
-	border-left: 5px solid gray;
+@media (min-width: 500px) {
+
+	body {
+		background: black;
+		color: #eee;
+		font-family: "Inconsolata", monospace;
+		padding-bottom: 10%;
+
+	}
+
+	.str {
+		color: red;
+	}
+
+	.code {
+		color: #66ffff;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: red;
+	}
+
+	hr {
+		display: none;
+	}
+
+	a:hover {
+		color: #aaa;
+	}
+
+	.comment,
+	h2 {
+		color: #3355ff;
+	}
+
+	.cmd {
+		outline: none;
+		background: black;
+		font-family: "Inconsolata", monospace;
+		color: #eee;
+		border: none;
+		display: block;
+	}
+
+	h2:before {
+		content: "// ";
+	}
+
+
+	.str:before,
+	.str:after {
+		content: '"';
+	}
+
+	.statusline {
+		width: 100%;
+		height: 50px;
+		position: fixed;
+		bottom: 0;
+		background: black;
+	}
+
+	.topline {
+		background: white;
+		color: black;
+	}
+
+	.cursor-location {
+		float:right;
+		width: 10%;
+	}
+
+	.filename {
+		width: 80%:
+	}
+
+	.environment {
+		display: flex;
+	}
+
+	.resume {
+		width: 100%;
+		margin-bottom: 300px;
+	}
+
+
+	#contact-form {
+		width: 50% - 5px;
+		display: none;
+		margin-bottom: 300px;
+		margin-left: 5px;
+		border-left: 5px solid gray;
+	}
+
+
+	#contact-form > * {
+		margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		padding: 10px;;
+		display: block;
+	}
+
+	#contact-form > input,
+	#contact-form > textarea {
+		background: #222;
+		color: #999;
+		border: #AAA;
+		line-height: 20px;
+		box-sizing: border-box;         /* For IE and modern versions of Chrome */
+		-moz-box-sizing: border-box;    /* For Firefox                          */
+		-webkit-box-sizing: border-box;
+	}
+
+	#contact-form [type='submit'] {
+		border: 1px solid #ddd;
+		border-radius: 2px;
+	}
+
+	/* Change autofill background color in webkit browsers */
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover, 
+	input:-webkit-autofill:focus {
+		-webkit-text-fill-color: #999;
+	}
+
+	br + input,
+	br + h2 {
+		margin-bottom: 5px;
+	}
+
 }
-
-
-#contact-form > * {
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	padding: 10px;;
-	display: block;
-}
-
-#contact-form > input,
-#contact-form > textarea {
-	background: #222;
-	color: #999;
-	border: #AAA;
-	line-height: 20px;
-	box-sizing: border-box;         /* For IE and modern versions of Chrome */
-	-moz-box-sizing: border-box;    /* For Firefox                          */
-	-webkit-box-sizing: border-box;
-}
-
-#contact-form [type='submit'] {
-	border: 1px solid #ddd;
-	border-radius: 2px;
-}
-
-/* Change autofill background color in webkit browsers */
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus {
-	-webkit-text-fill-color: #999;
-}
-
-
-
-
-
-br + input,
-br + h2 {
-	margin-bottom: 5px;
-}
-
 @media not print {
 	h2 span,
 	h1 span,
@@ -181,18 +221,17 @@ br + h2 {
 		display: none;
 	}
 
-	body {
-		padding-left: 15px;
-	}
 }
 
 
 @media only print {
+
   h2,
   .comment,
   .str {
     color: black;
   }
+
   body {
     background: white;
     color: black;
@@ -217,6 +256,7 @@ br + h2 {
   h2:before {
     content: none;
   }
+
   hr {
     display: block;
   }
