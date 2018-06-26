@@ -1,3 +1,11 @@
+function displayContactForm() {
+		document.getElementById("contact-form").style.display = "block";
+		document.querySelector(".resume").style.width = "50%";
+		window.scroll(0,0);
+}
+
+
+
 if (!window.matchMedia("(print)").matches) {
 	var vimTags = document.querySelectorAll(".vim");
 	
@@ -33,14 +41,12 @@ var formLinks = document.querySelectorAll(".form-link");
 
 for(var j=0; j < formLinks.length; j++) {
 	formLinks[j].addEventListener("click", function (event) {
-		document.getElementById("contact-form").style.display = "block";
-		document.querySelector(".resume").style.width = "50%";
-		window.scroll(0,0);
+    displayContactForm();
 	});
 }
 
-console.log("Hello!");
 
+  
 
 
 
