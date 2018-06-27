@@ -32,7 +32,8 @@ time, mark, audio, video {
 */
 
 a {
-  color: #a00008;
+  color: #d37474;
+  text-decoration: none;
 }
 .menu {
   background: #777;
@@ -48,7 +49,7 @@ a {
 
 .menu div {
   display: inline;
-  padding: 3px 5px 3px 5px;
+  padding: 3px 0 3px 10px;
 
 }
 
