@@ -30,11 +30,15 @@ document.querySelector("#cmd").onsubmit = function (event) {
   event.target.reset();
   event.target.childNodes[0].blur();
 
+  /* Haven't decided what to do with command mode stuff if anything....
+
   if (formData.get('cmd') == ":q" || formData.get('cmd') == ":wq") {
     
     window.location.assign("desktop.html");
     console.log("switching to desktop");
   }
+
+  */
 
 };
 
