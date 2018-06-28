@@ -30,6 +30,9 @@ time, mark, audio, video {
  * Custom Styles
  ************************
 */
+body {
+  padding-bottom: 50px;
+}
 
 a {
   color: #d37474;
@@ -59,9 +62,13 @@ a {
   text-decoration: underline;
 }
 
+.tab {
+  padding-left: 20px;
+}
+
 @media (max-width: 499px) {
 	body {
-		margin: 10%;
+		margin: 10% 10% 0 10%;
 		line-height: 12px;
 		font-family: 'Scope One, serif';
 		background-color: #ddd;
@@ -111,7 +118,6 @@ a {
 		background: black;
 		color: #eee;
 		font-family: "Inconsolata", monospace;
-		padding-bottom: 10%;
 
 	}
 
@@ -188,14 +194,13 @@ a {
 
 	.resume {
 		width: 100%;
-		margin-bottom: 300px;
 	}
 
 
 	#contact-form {
 		width: 50% - 5px;
 		display: none;
-		margin-bottom: 300px;
+		padding-bottom: 300px;
 		margin-left: 5px;
 		border-left: 5px solid gray;
 	}
@@ -219,6 +224,7 @@ a {
 		-moz-box-sizing: border-box;    /* For Firefox                          */
 		-webkit-box-sizing: border-box;
 	}
+
 
 	#contact-form [type='submit'] {
 		border: 1px solid #ddd;

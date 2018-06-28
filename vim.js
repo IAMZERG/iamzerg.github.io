@@ -11,7 +11,8 @@ if (!window.matchMedia("(print)").matches) {
 	
 	console.log(vimTags);
 	for(var i=0; i < vimTags.length; i++) {
-			vimTags[i].innerHTML = vimTags[i].innerHTML.replace("let", "<span class='code'>let</span>");
+			vimTags[i].innerHTML = vimTags[i].innerHTML.replace("var", "<span class='code'>var</span>");
+			vimTags[i].innerHTML = vimTags[i].innerHTML.replace("this.", "<span class='code'>this.</span>");
 	}
 	
 }
