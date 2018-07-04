@@ -275,9 +275,22 @@ a {
   }
 
   body {
-    background: white;
-    color: black;
-    font-family: serif;
+    font-family: 'Tinos', serif;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+  }
+
+  
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+
+  h1,h2 {
+    padding: 5px 0 5px 0;
   }
 
   a {
@@ -285,19 +298,23 @@ a {
     color: #ddd;
   }
 
-  h1 {
-    font-size: 2em;
-    font-weight: 500;
+  hr {
+    display: none;
   }
-  h2 {
-    font-size: 1.5em;
-    font-weight: 400;
+
+  .links {
+    width: 35%;
+    float: right;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 20px;
   }
 
   
   .vim {
     display: none;
   }
+
 
 
   /* remove added content for print view */
@@ -308,8 +325,5 @@ a {
     content: none;
   }
 
-  hr {
-    display: block;
-  }
    
 }
