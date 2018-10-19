@@ -220,6 +220,7 @@ a {
 
 
 	#contact-form {
+    padding-top: 40px;
 		width: 50% - 5px;
 		display: none;
 		padding-bottom: 300px;
